@@ -1,0 +1,53 @@
+<view class="container">
+    <block wx:for="{{orderList}}">
+        <view class="order_list" bindtap="goToDetail" data-id="{{item.orderId}}" wx:if="{{item.serviceCode=='002'}}">
+            <view class="orderList_bt">{{item.fuwu}}<view class="fred fr">
+                <text wx:if="{{item.status == '-1'}}">已过期</text>
+                <text wx:elif="{{item.status == '0' && item.payStatus=='0'}}">待抢约</text>
+                <text wx:elif="{{item.status == '0' && item.payStatus=='-1'}}">待付款</text>
+                <text wx:elif="{{item.status == '2'}}">已服务</text>
+                <text wx:elif="{{item.status == '3'}}">已取消</text>
+                <text wx:elif="{{item.status == '4'}}">已报价</text>
+                <text wx:elif="{{item.status == '6'}}">已关闭</text>
+                <text wx:elif="{{item.status == '7'}}">人工取消</text>
+                <text wx:elif="{{item.status == '8'}}">送药员确认已送货</text>
+                <text wx:else>用户拒收</text>
+                
+            </view></view>
+            <view class="orderList_fy">服务费<text class="fred" wx:if="{{item.times>0}}">{{item.amount}}元/{{item.times}}次</text><text class="fred" wx:else>{{item.amount}}元</text></view>
+            <view class="orderList_time">{{item.serviceTime}}<view class="zhuangtai fr">预约号   {{item.orderId}}</view></view>
+        </view>
+
+        <view class="order_list" wx:else>
+            <view class="orderList_bt">{{item.fuwu}}<view class="fred fr">
+                <block wx:if="{{item.serviceCode=='001'}}">
+                    <text wx:if="{{item.status == '-1' || item.status == '3' || item.status == '7'}}">已取消</text>
+                    <text wx:elif="{{item.status == '0'}}">待抢约</text>
+                    <text wx:elif="{{item.status == '1'}}">待服务</text>
+                    <text wx:elif="{{item.status == '2'}}">已服务</text>
+                    <text wx:elif="{{item.status == '4' && item.payStatus=='-1'}}">待付款</text>
+                </block>
+                <block wx:else>
+                    <text wx:if="{{item.status == '-1'}}">已过期</text>
+                    <text wx:elif="{{item.status == '0' && item.payStatus=='0'}}">待抢约</text>
+                    <text wx:elif="{{item.status == '0' && item.payStatus=='-1'}}">待付款</text>
+                    <text wx:elif="{{item.status == '2'}}">已服务</text>
+                    <text wx:elif="{{item.status == '3'}}">已取消</text>
+                    <text wx:elif="{{item.status == '4'}}">已报价</text>
+                    <text wx:elif="{{item.status == '6'}}">已关闭</text>
+                    <text wx:elif="{{item.status == '7'}}">人工取消</text>
+                    <text wx:elif="{{item.status == '8'}}">送药员确认已送货</text>
+                    <text wx:else>用户拒收</text>
+                </block>
+
+            </view></view>
+            <view class="orderList_fy">服务费<text class="fred" wx:if="{{item.times>0}}">{{item.amount}}元/{{item.times}}次</text><text class="fred" wx:else>{{item.amount}}元</text></view>
+            <view class="orderList_time">{{item.serviceTime}}<view class="zhuangtai fr">预约号   {{item.orderId}}</view></view>
+        </view>
+    </block>
+    <view class="loadingText" hidden="{{loadingBlen}}">
+        <view wx:if="{{loadingEnd}}"><image src="/images/loading.gif" style="width:35px;height:35px;vertical-align:middle"></image>正在加载...</view>
+        <view wx:else>加载完成</view>
+    </view>
+</view>
+

@@ -1,0 +1,7 @@
+<!--pages/serviceTimes/serviceTimes.wxml-->
+<view class="FWlist" wx:for="{{list}}">
+    <view class="FWlist_y">
+        <text class="fl">第{{index+1}}次</text>
+        <text class="fr">{{item.OPERATETIME}}</text>
+    </view>
+</view>

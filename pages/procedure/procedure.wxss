@@ -1,0 +1,16 @@
+/* pages/procedure/procedure.wxss */
+.neirq{
+    padding: 15px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #737373;
+}
+
+.banner image{width: 100%;text-align: center;}
+.color_red{color: rgb(255, 0, 0);}
+.neirq text{
+    display: block;
+}
+.bold{
+    font-weight: bold;
+}

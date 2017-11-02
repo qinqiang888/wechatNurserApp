@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="body_cur">
+    <view class="sy_banner">
+        <image  src="{{src}}" ></image>
+    </view>
+
+    <view class="fwx">
+        <block wx:for="{{item}}">
+            <view  data-name="{{item.name}}" id="{{item.code}}" class="bor_rt"  bindtap="order">
+                <view class="index_icon">
+                    <image class="img" src="{{item.pic}}"></image>
+                </view>
+                <view class="index_icor">
+                    <text class="b">{{item.name}}</text>
+                    <text class="p">{{item.descrip}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view bindtap="home"class="cy_ico">
+        <image class="img" src="/images/cy_ico.png" ></image>
+    </view>
+    <loading hidden="{{hidden}}">加载中...</loading>
+
+</view>

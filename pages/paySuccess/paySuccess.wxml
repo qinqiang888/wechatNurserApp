@@ -1,0 +1,10 @@
+<view>
+  <view class="result_picbox">
+  <image class="image"src="http://m.yihu365.com/58/images/payyes.jpg"></image> </view>
+  <view class="result_con">
+			<text class="h5">支付完成，正在等待护士抢约</text>
+			
+			<text class="p">护士抢约后将有短信通知到{{userMobile}}，请查收</text>
+		</view>
+<view class="botm-btn"><view class="order_btn"><button  class="foobtnrend" bindtap="orderDetail" hover-class="button-hover">查看详情</button></view></view>
+</view>

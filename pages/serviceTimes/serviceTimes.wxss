@@ -1,0 +1,10 @@
+/* pages/serviceTimes/serviceTimes.wxss */
+.FWlist{width:100%; height:auto;font-size:14px;}
+.FWlist view{ height:44px; line-height:44px;border-bottom:1px solid #eee; padding:0 15px;}
+.FWlist_y{ color:#a5a5a5}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}

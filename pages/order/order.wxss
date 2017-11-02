@@ -1,0 +1,215 @@
+.mf_fix { 
+    padding:0 0 75px 0;
+}
+.od_s2_addr { 
+    font-size:16px;padding: 3px;
+    background: #fff url(http://m.yihu365.com/images/dizhi_bg.png) 0 0;
+    background-size: 33px;
+    color: #292d33;
+    border-bottom: 8px solid #f1f2f6;
+}
+.od_s2_addr .box {
+    position: relative;
+    padding: 17px 25px 17px 53px;
+    line-height: 20px;
+    background-color: #fffaf3;
+    color:#a9a9a9;
+}
+.slip{
+    height: 10px;
+    background: #f1f2f6;
+}
+.dizhiico,.louico,.nameico,.shenfico,.genderico,.guanxiico{ 
+    display:block;
+    width:24px; 
+    height:24px;
+    position:absolute;
+    left:15px; 
+    top:50%;
+    margin-top:-12px;
+}
+.dizhiico{
+    background:url(http://m.yihu365.com/images/dizhi01.png) no-repeat center center; 
+    background-size: 70% auto;
+}
+.od_s2_addr .txt {
+    line-height: 25px;
+    color: #b2b8c2;
+}
+.dizhimore{ 
+    width:30px;
+    height:24px;
+    background:url(http://m.yihu365.com/images/dizhi03.png) no-repeat center center;
+    position:absolute;
+    right:0; 
+    top:50%; 
+    margin-top:-12px; 
+    background-size:18px auto
+}
+.order_s3,.order_s4{ 
+    border-bottom:1px solid #e8ebf0; 
+    border-top:1px solid #e8ebf0;
+    background:#fff;
+}
+
+.order_s3 .order_li, .order_s4 .order_li { 
+    margin-left:15px;
+    border-bottom:1px solid #e8ebf0;
+    font-size:16px;
+    z-index:1;
+    position:relative;
+}
+.order_s4 .order_li{
+    padding:10px 0;
+}
+.order_s3 .order_beizhu{  
+    margin-right:15px;
+    border-bottom:0;
+}
+.order_s3 .details{
+    padding:10px 0;
+}
+.order_s4 .order_beizhu{  
+    border-bottom:0;
+}
+.icotime, .icombz, .icomsg, .icotimeB, .icotimeE{
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:50%;
+    margin-top:-15px;
+    left:0
+}
+.icotime { 
+    background: url(http://m.yihu365.com/images/icotime.png) no-repeat center center;
+    background-size:75%;
+}
+.icotimeB {
+    background: rgba(0, 0, 0, 0) url("http://m.yihu365.com/images/icotimeB.png") no-repeat scroll center center / 80% auto;
+}
+.icotimeE {
+    background: rgba(0, 0, 0, 0) url("http://m.yihu365.com/images/icotimeE.png") no-repeat scroll center center / 80% auto;
+}
+.icombz {
+    background:url(http://m.yihu365.com/images/icombz.png) no-repeat center center;
+    background-size:80%;
+}
+.icomsg{ 
+    background:url(http://m.yihu365.com/images/icomsg.png) no-repeat center center;
+    background-size:90%;
+}
+.icobeizhu {
+    background:url(http://m.yihu365.com/images/icobeizhu.png)  no-repeat center center;
+    background-size:75%;
+    width:30px;
+    height:30px;
+    position:absolute; 
+    top:15px;
+    left:5px
+}
+.txtcon {
+    position: relative;
+    z-index: 99;
+    margin:0 0 0 40px;
+    line-height:30px;
+}
+.txtgrey { 
+    color:#a9a9a9;
+    
+    line-height:24px;
+    font-size:16px
+}
+.txtgrey text{
+    display: block;
+    padding:13px 0 10px;
+}
+.black{
+    color:#525a66;
+}
+.or_bz_cont{ 
+    background:#f1f2f6;
+    border-radius:5px;
+    padding:10px 10px 10px 40px;
+}
+.or_bz_cont textarea{ 
+    height:48px;
+    line-height:24px;
+    width:100%;
+    background:#f1f2f6;
+    border:0;
+    font-size:15px
+}
+
+.txtcon1{
+    margin:0 40px 0 0;
+    height:30px;
+    line-height:30px;
+}
+.gender_ch{ 
+    position:absolute;
+    right:0;
+    top:12px;
+    height:24px;
+    width:auto;
+    line-height:24px;
+}
+
+.gender_ch label{
+    float:left;
+    margin-right:18px;
+}
+.gender_ch radio{
+    margin-right:3px;
+    vertical-align:bottom;
+}
+.baox_txt{ 
+    padding:15px 35px 15px 15px;
+    color:#666; 
+    background:#fff;
+    position:relative;
+    font-size:14px;
+    border-top:1px solid #e8ebf0;
+    margin-top:-1px;
+}
+.baox_ch{ 
+    background:url(http://m.yihu365.com/images/wxbxM1.png) no-repeat center center/18px 18px;
+    position:absolute;
+    width:18px; 
+    height:18px; 
+    top:50%;
+    margin-top:-9px; 
+    right:10px
+}
+.baox_txt navigator{
+    display: inline;
+    color:#1cc6a3; 
+    text-decoration:underline;
+    padding:0 2px;
+}
+.foobtnone {
+    position: fixed;
+    left:0;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+    background-color: #fff;
+    z-index: 100;
+}
+.foobtnone .foobtnrend {
+    display: block;
+    background-color: #1cc6a3;
+    color: #fff;
+    height: 44px;
+    line-height: 44px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin:15px;
+}
+modal .center{
+    text-align: center
+}
+.foobtnone .disabled{
+    background: #999;
+    color: #ccc
+}
+

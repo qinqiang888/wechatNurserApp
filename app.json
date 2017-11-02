@@ -1,0 +1,43 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/pay/pay",
+    "pages/paySuccess/paySuccess",
+    
+    "pages/login/login",
+     
+    
+    "pages/home/home",
+     
+   
+    "pages/order/order",
+    "pages/coupon/coupon",
+    
+    
+    "pages/orderList/orderList",
+    "pages/orderDetail/orderDetail",
+    "pages/selectAddressList/selectAddressList",
+    "pages/addNewAddress/addNewAddress",
+    
+    "pages/patient/patient",
+    "pages/selectPatientList/selectPatientList",
+
+    
+    "pages/perfectInfo/perfectInfo",
+    "pages/account/account",
+    "pages/recharge/recharge",
+
+    "pages/procedure/procedure",
+    "pages/insurance/pingan",
+    "pages/insurance/renbao",
+    "pages/serviceTimes/serviceTimes"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "护士上门",
+    "navigationBarTextStyle":"black"
+  }
+}

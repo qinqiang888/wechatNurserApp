@@ -1,0 +1,64 @@
+.order_list {
+    padding: 10px 15px;
+    height: 60px;
+    line-height: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    margin-top: -1px;
+    font-size: 14px;
+}
+
+.fr {
+    float: right;
+}
+
+.orderList_bt {
+    color: #1cc6a3;
+}
+
+.fred {
+    color: #f00
+}
+
+.orderList_time {
+    font-size: 12px;
+    color: #737373
+}
+
+.order_btDay {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    background: #f7f8fa;
+}
+
+.container {
+    background: #f7f8fa;
+}
+
+.loadingText {
+    font-size: 13px;
+    text-align: center;
+
+}
+
+.orderNbox{text-align:center; margin:0 0 20px 0;padding-top:50px;}
+.orderNbox image{width:100px; margin:0 auto;height:100px}
+.order_btn{margin:50px auto 0 auto;text-align:center}
+.result_con .textNo {font-size: 16px;line-height: 30px;padding: 10px 0;font-weight: 400;}
+.result_con {text-align: center;line-height: 20px; padding:0 15px;}
+.order_btn {
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+navigator.foobtnrend {
+    display: block;
+    background: #1cc6a3;
+    color: #fff;
+    height: 44px;
+    line-height: 44px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 15px;
+}

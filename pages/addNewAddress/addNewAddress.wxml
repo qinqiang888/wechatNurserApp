@@ -1,0 +1,28 @@
+<view class="container">
+  <form class="forms">
+    <view class="fline_block"> <view class="dizhiico"></view>
+      <view class="ipblock">
+          <view class="address"bindtap="chooseLocation" >{{address}}</view>
+      </view>
+      <!--<view class="dd_searchno" hidden="false">-->
+       <!--<view class="bt">您要找的是不是</view>-->
+       <!--<view class="dd_searchno_cont1" >
+         <view class="Addressdetails" bindtap="selectAddress"wx:for="{{AddressList}}">
+          <view class="title">{{item.title}}</view>
+          <view>{{item.address}}</view>
+         </view>
+       </view>-->
+      </view>
+      <!--</view>-->
+    <view class="fline_block">
+      <view class="louico"></view>
+      <view class="ipblock">
+    <input name="" type="text" bindblur="bindInput"value="{{doorplate}}"placeholder='楼层门面信息'></input>
+      </view>
+    </view>
+  </form>
+
+<view class="foobtnone" ><button class="foobtnrend" disabled="{{disabled}}" loading="{{loading}}"bindtap="addNewAddress">确定</button></view>
+
+
+</view>

@@ -1,0 +1,150 @@
+<view class="container">
+    <view class="mf_fix">
+        <view class="order_s2">
+            <view class="od_s2_addr">
+                <navigator open-type="redirect" url="/pages/selectAddressList/selectAddressList" >
+                    <view class="box">
+                        <view class="dizhiico"></view>
+                        <text wx:if="{{!address}}">请选择服务地址</text>
+                        <text class="black" wx:else>{{address}}</text>
+                        <view class="dizhimore"></view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+
+        <view class="order_s3">
+            <view class="order_li">
+                <view class="icotime"></view>
+                <block wx:if="{{address}}">
+                    <picker bindchange="bindPickerChange" range="{{serviceDate}}" value="{{serviceDateIndex}}" class="txtcon txtgrey">
+                        <text wx:if="{{serviceDateIndex===8}}">服务日期</text>
+                        <text class="black" wx:else>{{serviceDate[serviceDateIndex]}}</text>
+                    </picker>
+                </block>
+                <view class="txtcon txtgrey" bindtap="addressNo" wx:else><text>服务日期</text></view>
+                <view class="dizhimore"></view>
+            </view>
+
+            <view class="order_li">
+                <view class="icotimeB"></view>
+
+                <block wx:if="{{address}}">
+                    <block wx:if="{{serviceDateIndex!=8}}">
+                        <picker bindchange="bindPickerChangeStart" value="{{serviceStartIndex}}"  range="{{serviceStart}}" class="txtcon txtgrey" >
+                            <text wx:if="{{serviceStartIndex>serviceStart.length}}">开始时间</text>
+                            <text class="black" wx:else>{{serviceStart[serviceStartIndex]}}</text>
+                        </picker>
+                    </block>
+                    <view class="txtcon txtgrey" bindtap="dateNo" wx:else><text>开始时间</text></view>
+                </block>
+                <view class="txtcon txtgrey" bindtap="addressNo" wx:else><text>开始时间</text></view>
+                <view class="dizhimore"></view>
+            </view>
+
+            <view class="order_li">
+                <view class="icotimeE"></view>
+                <block wx:if="{{address}}">
+                    <block wx:if="{{serviceStartIndex<=serviceStart.length}}">
+                        <picker bindchange="bindPickerChangeEnd" range="{{serviceEnd}}" value="{{serviceEndIndex}}" class="txtcon txtgrey">
+                            <text wx:if="{{serviceEndIndex>serviceEnd.length}}">结束时间</text>
+                            <text class="black" wx:else>{{serviceEnd[serviceEndIndex]}}</text>
+                        </picker>
+                    </block>
+                    <view class="txtcon txtgrey" bindtap="startTimeNo" wx:else><text>结束时间</text></view>
+                </block>
+                <view class="txtcon txtgrey" bindtap="addressNo" wx:else><text>结束时间</text></view>
+                <view class="dizhimore"></view>
+            </view>
+
+            <view class="order_li">
+                <view class="icombz"></view>
+                <picker bindchange="bindPickerChangeTaocan" value="{{taocanIndex}}" range="{{taocanList}}" class="txtcon txtgrey" wx:if="{{address}}">
+                    <text wx:if="{{taocanIndex>taocanList.length}}">预约套餐</text>
+                    <text class="black" wx:else>{{taocanList[taocanIndex]}}</text>
+                </picker>
+                <view class="txtcon txtgrey" bindtap="addressNo" wx:else><text>预约套餐</text></view>
+                <view class="dizhimore"></view>
+            </view>
+            <view class="order_li order_beizhu details">
+                <view class="or_bz_cont">
+                    <view class="icobeizhu"></view>
+                    <input type="text" bindinput="detailChange" placeholder="病情描述" value="{{details}}"></input>
+                </view>
+            </view>
+        </view>
+
+        <view class="slip"></view>
+
+        <view class="order_s3 patient">
+            <navigator  open-type="redirect" url="/pages/selectPatientList/selectPatientList">
+                <view class="order_li order_beizhu details">
+                    <view class="icomsg"></view>
+                    <view class="txtcon txtgrey black" wx:if="{{patient}}">{{patient.relationship}}  {{patient.name}}  {{patient.sex}}  {{patient.age}}
+                        
+                    </view>
+                    <view class="txtcon txtgrey" wx:else>患者信息</view>
+                    <view class="dizhimore"></view>
+                </view>
+            </navigator>
+        </view>
+
+        <view class="slip"></view>
+
+        <view class="order_s4">
+            <view class="order_li">
+                <view class="txtcon1">有无{{serviceName}}工具</view>
+                <radio-group bindchange="radioCheckTool" class="gender_ch" name="tool">
+                    <block wx:if="{{tool=='1'}}">
+                        <label><radio value="1" checked></radio>有</label>
+                        <label><radio value="0"></radio>无</label>
+                    </block>
+                    <block wx:elif="{{tool=='0'}}">
+                        <label><radio value="1"></radio>有</label>
+                        <label><radio value="0" checked></radio>无</label>
+                    </block>
+                    <block wx:else>
+                        <label><radio value="1"></radio>有</label>
+                        <label><radio value="0"></radio>无</label>
+                    </block>
+                    
+                </radio-group>
+            </view>
+            <view class="order_li order_beizhu" wx:if="{{serviceCode=='001' || serviceCode=='002' || serviceCode=='003'}}">
+                <view class="txtcon1">有无必备药品</view>
+                <radio-group bindchange="radioCheckDrugs" class="gender_ch" name="med">
+                    <block wx:if="{{drugs=='1'}}">
+                        <label><radio value="1" checked></radio>有</label>
+                        <label><radio value="0"></radio>无</label>
+                    </block>
+                    <block wx:elif="{{drugs=='0'}}">
+                        <label><radio value="1"></radio>有</label>
+                        <label><radio value="0" checked></radio>无</label>
+                    </block>
+                    <block wx:else>
+                        <label><radio value="1"></radio>有</label>
+                        <label><radio value="0"></radio>无</label>
+                    </block>
+                </radio-group>
+            </view>
+        </view>
+
+        <view class="slip"></view>
+
+        <view class="baox_txt">
+            【医护到家】已免费为您投保<navigator url="/pages/insurance/renbao">中国人保意外综合险</navigator>和<navigator url="/pages/insurance/pingan">平安意外伤害保险、平安个人责任保险</navigator>。
+            <view class="baox_ch no"></view>
+        </view>
+        <view class="slip"></view>
+    </view>
+    
+    <view class="foobtnone">
+        <view class="foobtnrend" wx:if="{{address && (serviceDateIndex<serviceDate.length) && (serviceStartIndex<serviceStart.length) && (serviceEndIndex<serviceEnd.length) && (taocanIndex<taocanList.length) && details && tool && (drugs=='1') && patient}}" bindtap="goToContent">立即支付</view>
+        <view class="foobtnrend disabled" wx:else>立即支付</view>
+    </view>
+</view>
+
+<modal class="modal" hidden="{{dialogBlen}}" no-cancel bindconfirm="modalChangeSubmit" bindcancel="modalChange">
+    <view wx:if="{{contentTextBlen}}">{{dialogMsg}}</view>
+    <view class="center" wx:else>{{dialogMsg}}</view>
+</modal>

@@ -1,0 +1,17 @@
+/**app.wxss**/
+.container {
+  min-height: 100%;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  color:#525a66;
+  font-size:14px;
+  line-height: 1.5;
+} 
+view{
+  display: block;
+}
+modal{
+  position:relative
+}
+modal .center{
+    text-align: center
+}

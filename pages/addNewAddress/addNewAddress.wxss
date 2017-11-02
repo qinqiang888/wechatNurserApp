@@ -1,0 +1,145 @@
+.bgw {
+    background: #fff;
+}
+.mf_fix {
+    padding: 0 0 75px 0;
+}
+.fline_block {
+    display: block;
+    height: auto;
+    position: relative;
+    padding: 18px 35px 12px 15px;
+    border-bottom: 1px solid #e8ebf0;
+}
+.dizhiico {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -12px;
+    background: url(http://m.yihu365.com/images/dizhi01.png) no-repeat center center;
+    background-size: 70% auto;
+}
+.address{
+    color: #6D6F75;
+    font-size: 14px
+}
+.louico {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -12px;
+    background: url(http://m.yihu365.com/images/dizhi02.png) no-repeat center center;
+    background-size: 80% auto;
+}
+.ipblock {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.dd_searchno {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+}
+.ipblock input, .gender_input {
+    width: 100%;
+    border: 0;
+    height: 24px;
+    line-height: 20px;
+    font: 14px arial;
+}
+
+.addrcur, .addrno, .addrdel {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px;
+}
+.foobtnone {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+}
+.bt {
+    background: #f8f9fa;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.addr_manage_lbox {
+    width: 60%;
+    float: left;
+}
+
+.addr_manage_lbox .onebtn_white {
+    margin-right: 0;
+}
+.onebtn_white {
+    background-color: #fff;
+    border: 1px solid #b1b7c2;
+    color: #525a66;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 5px;
+    margin: 15px;
+}
+.addr_manage_rbox {
+    width: 40%;
+    float: left;
+}
+.title{
+        font-size: 18px;
+    height: 26px;
+    line-height: 26px;
+    font-weight: normal;
+    display: block;
+}
+.Addressdetails{
+    text-align: left;
+    padding: 20px 0 0 15px;
+    color: #888;
+}
+.foobtngrey {
+    display: block;
+    background-color: #d3d6db;
+    color: #fff;
+    height: 44px;
+    line-height: 44px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 15px;
+}
+.foobtnrend {
+    display: block;
+    background-color: #1cc6a3;
+    color: #fff;
+    height: 44px;
+    line-height: 44px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 15px;
+}
+button{
+    background: #1cc6a3;
+    color: #fff;
+}
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+color:rgba(0, 0, 0, 0.3);
+background-color:#1cc6a3;
+
+}

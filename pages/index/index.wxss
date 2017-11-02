@@ -1,0 +1,51 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.container{
+  
+    margin: 0;
+    padding: 0;
+}
+
+.body_cur {background: #f0f2f5;}
+.sy_banner img {width: 100%;height: auto;}
+.dfw{background: #fff;padding-left: 15px;border-bottom: 1px solid #e6e6e6;margin-bottom: 10px;}
+.dfw_top {border-bottom: 1px solid #e6e6e6;padding-right: 15px;}
+.dfw_top span {height: 43px;line-height: 43px;text-align: center}
+.dfw_top .fw { color: #222222;font-size: 16px;}
+.dfw_top .r_dfw {  font-size: 14px; float: right; color: #ff5d5b;}
+.dfw_btm {padding: 13px 0;  }
+.dfwtime {  background: url("http://m.yihu365.com/images/time.png") no-repeat center;  width: 16px;  height: 16px;  display: inline-block;  background-size: 100%;  }
+.dfwjine {  background: url("http://m.yihu365.com/images/jine.png") no-repeat center;  width: 16px;  height: 16px;  display: inline-block;  background-size: 100%;  }
+.li {  color: #222222;  font-size: 14px;  }
+/*.li:last-child {  margin-top: 14px;  }*/
+.i {  float: left;  }
+.dfw_btm span {  text-indent: 15px;  display: inline-block  }
+.fwx{background: #fff;overflow: hidden}
+.li {  float: left;  width: 50%; position: relative; border-bottom: 1px solid #e1e1e1;box-sizing:border-box;}
+.bor_rt{border-right: 1px solid #e1e1e1;position: relative;width:50%;float:left;box-sizing: border-box;border-bottom:1px solid #e1e1e1;}
+.index_icon{width: 40px;height: 40px;    position: absolute;  left: 15px;  top: 16px;}
+.img{width:40px;height: 40px;border-radius: 50%;}
+.index_icor {  margin: 0 20px 0 65px;  padding: 15px 0;  overflow: hidden;  }
+.b {  font-size: 14px;  display: block;  height: 22px;  line-height: 22px;  font-weight: normal;  color: #222222;  }
+.p {  font-size: 12px;  display: block;  height: 20px;  line-height: 20px;  color: #999;     overflow: hidden; }
+.cy_ico {  position: fixed;  bottom: 2%;  right: 5%;  }
+.sy_banner image{width:100%;height: 140px;}
